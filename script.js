@@ -151,6 +151,9 @@ function displayFollowing(data) {
       console.log(item.textContent);
       inputValue = item.textContent.trim();
       const followersUrl = `https://api.github.com/users/${inputValue}`;
+      followers.innerHTML = "";
+      following.innerHTML = "";
+      repos.innerHTML = "";
       apiRequest(followersUrl);
     });
   });
@@ -173,6 +176,9 @@ function displayRepos(data) {
       console.log(item.textContent);
       inputValue = item.textContent.trim();
       const followingUrl = `https://api.github.com/users/${inputValue}`;
+      followers.innerHTML = "";
+      following.innerHTML = "";
+      repos.innerHTML = "";
       apiRequest(followingUrl);
     });
   });
