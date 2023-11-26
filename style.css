@@ -33,6 +33,7 @@ body {
       background-color: #a5c9ff;
     }
   }
+
   @media (prefers-color-scheme: dark) {
     body {
       background-image: url(imgs/darkmode.jpg);
