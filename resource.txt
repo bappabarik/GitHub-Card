@@ -1,0 +1,10 @@
+//  console.log(darkThemeMq.matches);
+    //  const mqCallback = (mq) =>{
+    //     if (mq.matches) {
+    //       console.log("change to dark mode!");
+    //     } else {
+    //       console.log("change to light mode!");
+    //     }
+    //  };
+    //  darkThemeMq.addListener(mqCallback);
+    //  mqCallback(darkThemeMq);
