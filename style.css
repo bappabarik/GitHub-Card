@@ -9,7 +9,7 @@ body {
 
   @media (prefers-color-scheme: light) {
     body {
-      background: url(/imgs/lightmode.webp);
+      background: url(imgs/lightmode.webp);
       color: #333;
       background-repeat: no-repeat;
       background-size: cover;
