@@ -9,7 +9,7 @@ body {
 
   @media (prefers-color-scheme: light) {
     body {
-      background: url(/imgs/lightmode.webp);
+      background: url(imgs/lightmode.webp);
       color: #333;
       background-repeat: no-repeat;
       background-size: cover;
@@ -33,9 +33,10 @@ body {
       background-color: #a5c9ff;
     }
   }
+
   @media (prefers-color-scheme: dark) {
     body {
-      background-image: url(/imgs/darkmode.jpg);
+      background-image: url(imgs/darkmode.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       color: #dedede;
