@@ -37,6 +37,7 @@ liItems.forEach((item) => {
 
 const input = document.querySelector("input");
 const card = document.querySelector(".card");
+const errorMssg = document.querySelector('.error-mssg');
 let inputValue = "";
 
 const form = document.querySelector("form");
@@ -47,6 +48,7 @@ form.addEventListener("submit", (e) => {
   const username = `https://api.github.com/users/${inputValue}`;
   apiRequest(username);
   card.classList.remove("hidden");
+  errorMssg.classList.add('hidden');
   followers.innerHTML = "";
   following.innerHTML = "";
   repos.innerHTML = "";
@@ -79,8 +81,11 @@ function apiRequest(url) {
           displayRepos(data);
           console.log("repos data");
         }
+        console.log(xhr.status);
       } else {
         console.error(`Request failed with status: ${xhr.status}`);
+        errorMssg.classList.remove('hidden');
+        card.classList.add('hidden');
       }
     }
   };

@@ -14,7 +14,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .card, .search-box{
+    .card, .search-box, .error-mssg{
       background-color: #EEF5FF;
     }
     .nav-menu{
@@ -41,7 +41,7 @@ body {
       background-size: cover;
       color: #dedede;
     }
-    .card, .search-box{
+    .card, .search-box, .error-mssg{
       background-color: #2B3499;
     }
     .nav-menu{
@@ -117,7 +117,7 @@ body {
     height: 25px;
   }
 
-  .card{
+  .card, .error-mssg{
     /* max-height: 550px; */
     width: 100%;
     /* margin: 10px; */
@@ -213,6 +213,12 @@ body {
     height: 40px;
     width: 40px;
     border-radius: 100%;
+  }
+
+  .error-mssg{
+    padding: 5px;
+    text-align: center;
+
   }
 
   
